@@ -1,0 +1,24 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/base';
+@import './base/card-set';
+
+@import './components/modal-window';
+@import './components/logo';
+@import './components/header';
+@import './components/footer';
+
+@import './layout/hero';
+@import './layout/features';
+@import './layout/special';
+@import './layout/team';
+@import './layout/socials';
+@import './layout/clients';
+@import './layout/portfolio-filtr';
+@import './layout/portfolio-list';
+
+
+

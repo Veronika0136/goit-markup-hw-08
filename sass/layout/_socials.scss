@@ -1,0 +1,24 @@
+.socials__list {
+    @extend %centered;
+    gap: 10px;
+}
+
+.socials__link {
+    @extend %centered;
+    color: var(--additional-txt-cl);
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: color var(--time), background-color var(--time);
+
+    &:hover,
+    &:focus {
+    color: #ffffff;
+    background-color: var(--accent-txt-cl);
+}
+}
+
+.socials__icon {
+    fill: currentColor;
+}

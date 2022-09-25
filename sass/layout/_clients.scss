@@ -1,0 +1,31 @@
+.clients-title {
+    @include font (700, 36px, 42px, 0.03em);
+    text-align: center;
+    color: var(--additional-dark-txt-cl);
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-link {
+    @extend %centered;
+    width: 170px;
+    height: 92px;
+    color: var(--additional-txt-cl);
+    border: 1px solid var(--additional-txt-cl);
+    border-radius: 4px;
+    transition: color var(--time), border-color var(--time);
+  
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        border-color: var(--accent-txt-cl);
+    }
+}
+
+.clients-icon {
+    fill: currentColor;
+}
