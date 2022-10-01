@@ -54,6 +54,10 @@
     .features__thumb {
     width: 354px;
     }
+
+        .features__subtitle {
+            text-align: start;
+        }
 }
 
 /* Desktop */
@@ -74,34 +78,8 @@
     width: 270px;
     }
 
+    .features__subtitle {
+     text-align:start;   
+    }
+
 }
-
-
-
-// .features__list {
-//     display: flex;
-//     gap: 30px;
-// }
-
-// .features__item {
-//     flex-basis: 270px;
-// }
-
-// .features__thumb {
-//     @extend %centered;
-//     width: 270px;
-//     height: 120px;
-//     background-color: var(--light-bg-cl);
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-// }
-
-// .features__subtitle {
-//     @include font (700, 14px, 16px, 0.03em);
-//     margin-bottom: 10px;
-//     text-transform: uppercase;
-// }
-
-// .features__txt {
-//     @include font (400, 14px, 24px, 0.03em);
-// }
