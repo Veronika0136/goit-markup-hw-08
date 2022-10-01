@@ -31,7 +31,7 @@
   overflow: hidden;
 }
 
-.portfolio-overlay, .clients-link, .socials__link, .socials__list, .special__overlay, .features__thumb, .hero__btn, .footer-subs-form, .footer-socials-link, .footer-socials-list, .register-form-agreement, .modal-btn {
+.portfolio-overlay, .clients-link, .socials__link, .socials__list, .special__overlay, .hero__btn, .footer-subs-form, .footer-socials-link, .footer-socials-list, .register-form-agreement, .modal-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,11 +104,24 @@ body {
     width: 1200px;
   }
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -799,39 +812,40 @@ body {
   padding-bottom: 0;
 }
 
-.features__list {
-  display: flex;
-  gap: 30px;
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .features__item {
+    margin-bottom: 30px;
+    flex-basis: 270px;
+  }
+  .features__thumb {
+    width: 450px;
+    height: 120px;
+    background-color: var(--light-bg-cl);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .features__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .features__txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+  }
 }
-
-.features__item {
-  flex-basis: 270px;
-}
-
-.features__thumb {
-  width: 270px;
-  height: 120px;
-  background-color: var(--light-bg-cl);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.features__subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.features__txt {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-}
-
+/* Tablet */
+/* Desktop */
 .title {
   font-weight: 700;
   font-size: 36px;
