@@ -709,6 +709,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 767px;
   height: 400px;
   padding: 118px 0;
   margin-left: auto;
@@ -762,6 +763,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url("../../images/hero/hero-tablet.jpg");
+    max-width: 1199px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -773,6 +775,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url("../../images/hero/hero-desktop.jpg");
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0;
   }
