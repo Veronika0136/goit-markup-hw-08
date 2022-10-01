@@ -1,3 +1,7 @@
+/* Mobile */
+
+@media screen and (max-width:767px) {
+    
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -112,3 +116,12 @@
    @include font (500, 18px, 22px, 0.02em);
    color: var(--accent-txt-cl);
     }
+
+}  
+/* Tablet */ 
+
+@media screen and (min-width:768px){
+    .mobile-menu{
+        display: none;
+    }
+}
