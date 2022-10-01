@@ -686,29 +686,28 @@ body {
 }
 .hero {
   background-color: #c4c4c4;
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 400px;
+  padding: 118px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 30px;
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
+  width: 360px;
+  margin-bottom: 30px;
 }
 
 .hero__btn {
@@ -722,7 +721,7 @@ body {
   cursor: pointer;
   min-width: 200px;
   min-height: 50px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   border: none;
   border-radius: 4px;
   margin-left: auto;
@@ -731,10 +730,49 @@ body {
   transition: color var(--time), background var(--time);
 }
 .hero__btn:hover, .hero__btn:focus {
-  color: #ffffff;
   background: #188ce8;
 }
 
+/*Mobile*/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url("../../images/hero/hero-mobile@2x.jpg");
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../../images/hero/hero-tablet.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url("../../images/hero/hero-tablet.@2x.jpg");
+  }
+}
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../../images/hero/hero-desktop.jpg");
+    height: 600px;
+    padding: 200px 0;
+  }
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    letter-spacing: 0.06em;
+    width: 696px;
+  }
+  .hero__btn {
+    padding: 10px 32px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url("../../images/hero/hero-desktop@2x.jpg");
+  }
+}
 .features {
   padding-bottom: 0;
 }
