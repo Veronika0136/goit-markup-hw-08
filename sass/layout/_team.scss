@@ -8,11 +8,12 @@
     margin-bottom: 30px;
     }  
 }
+
 .team__item {
     margin-bottom: 30px;
 }
 
-img {
+.team__img {
     @media screen and (max-width:480px){
      width: 100%;   
     }
@@ -49,6 +50,14 @@ img {
 }
 
 
+@media screen and (min-width:768px){
+    .team__list{
+     display: flex;
+     gap: 30px;
+     flex-wrap: wrap;   
+    }
+
+}
 
 
 // .team {
