@@ -15,7 +15,15 @@
     flex-direction: column;
     gap: 60px;
 }
+
+@media screen and (min-width:768px) {
+    .footer-group {
+    flex-direction:row;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
     
+}
 
 .footer-contacts{
    display: flex;
@@ -139,6 +147,8 @@
 }   
 
 .footer-subs-group {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -160,6 +170,15 @@
             }
     }
     
+   @media screen and (min-width:768px) {
+    .footer-subs-input{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   }
+
+
     .footer-subs-btn {
         @include font (700, 16px, 30px, 0.06em);
         max-width: 200px;
