@@ -796,7 +796,7 @@ body {
     font-size: 44px;
     line-height: 1.3636363636;
     letter-spacing: 0.06em;
-    width: 696px;
+    max-width: 696px;
   }
   .hero__btn {
     padding: 10px 32px;
