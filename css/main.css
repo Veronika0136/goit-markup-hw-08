@@ -472,6 +472,13 @@ body {
   gap: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .footer-contacts {
   display: flex;
   flex-direction: column;
@@ -597,6 +604,8 @@ body {
 }
 
 .footer-subs-group {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -616,6 +625,13 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-subs-input {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .footer-subs-btn {
   font-weight: 700;
   font-size: 16px;
