@@ -1,36 +1,40 @@
-@media screen and (min-width:1200px) {
+.special {
+    @media (max-width:1199px) {
+    display: none;
+    }  
+}
+   
 
-    .title {
-    @include font (700, 36px, 42px, 0.03em);
-    margin-bottom: 50px;
-    text-align: center;
-    }
+.title {
+@include font (700, 36px, 42px, 0.03em);
+margin-bottom: 50px;
+text-align: center;
+}
 
-    .special__list {
-    display: flex;
-    gap: 30px;
-    }
+.special__list {
+display: flex;
+gap: 30px;
+}
 
-    .special__item {
-    position: relative;
-    }
+.special__item {
+position: relative;
+}
 
-    .special__overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 224px;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-    }
+.special__overlay {
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 224px;
+left: 0;
+width: 100%;
+height: 70px;
+background-color: rgba(47, 48, 58, 0.8);
+}
 
-    .special__text {
-    @include font (700, 14px, 16px, 0.03em);
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    }
+.special__text {
+@include font (700, 14px, 16px, 0.03em);
+text-align: center;
+text-transform: uppercase;
+color: #ffffff;
 }
