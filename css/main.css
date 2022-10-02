@@ -894,6 +894,7 @@ body {
 .special__list {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .special__item {
@@ -941,22 +942,22 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  img {
+  .team__img {
     width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
-  img {
+  .team__img {
     width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  img {
+  .team__img {
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  img {
+  .team__img {
     width: 270px;
   }
 }
@@ -987,6 +988,13 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
 .socials__list {
   gap: 10px;
 }
