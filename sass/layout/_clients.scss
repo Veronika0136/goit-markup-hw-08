@@ -1,18 +1,25 @@
 .clients-title {
-    @include font (700, 36px, 42px, 0.03em);
-    text-align: center;
-    color: var(--additional-dark-txt-cl);
-    margin-bottom: 50px;
+   @include font (700, 28px, 33px, 0.03em); 
+   text-align: center;
+   color: var(--additional-dark-txt-cl);
+   margin-bottom: 30px;
+
+   @media screen and (min-width:1200px){
+      @include font (700, 36px, 42px, 0.03em); 
+      margin-bottom: 50px;
+   }
 }
 
 .clients-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .clients-link {
     @extend %centered;
-    width: 170px;
+    max-width: 210px;
     height: 92px;
     color: var(--additional-txt-cl);
     border: 1px solid var(--additional-txt-cl);
@@ -24,8 +31,21 @@
         color: var(--accent-txt-cl);
         border-color: var(--accent-txt-cl);
     }
+    @media screen and (min-width:480px){
+       width: 210px ;
+    }
+
+    @media screen and (min-width:768px){
+        width: 226px;    
+        }
+    
+    @media screen and (min-width:1200px){
+        width: 170px;    
+    }
 }
 
 .clients-icon {
     fill: currentColor;
 }
+
+
