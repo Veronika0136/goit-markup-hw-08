@@ -885,75 +885,50 @@ body {
     text-align: start;
   }
 }
-@media screen and (min-width: 1200px) {
-  .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1666666667;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    text-align: center;
+@media (max-width: 1199px) {
+  .special {
+    display: none;
   }
-  .special__list {
-    display: flex;
-    gap: 30px;
-  }
-  .special__item {
-    position: relative;
-  }
-  .special__overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 224px;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
-  .special__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1428571429;
-    letter-spacing: 0.03em;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-}
-.team {
-  background-color: var(--light-bg-cl);
 }
 
-.team__list {
-  --itens: 4;
-}
-
-.team__wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.team__prof {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.1875;
+.special__list {
+  display: flex;
+  gap: 30px;
+}
+
+.special__item {
+  position: relative;
+}
+
+.special__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 224px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.special__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
   text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .socials__list {
