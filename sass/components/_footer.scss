@@ -83,6 +83,20 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (min-width:1200px) {
+    .footer-address-list{
+        margin-left: 0;   
+    }
+    .footer-address-txt{
+        margin-left: 0;   
+    }
+    .footer-logo{
+        margin-left: 0; 
+    } 
+}
+
+
 .footer-address-list-item-link {
      color: rgba(255, 255, 255, 0.6);
      transition: color var(--time);
@@ -105,6 +119,12 @@
     color: #ffffff;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-width:1200px){
+    .footer-title {
+        margin-left:0;   
+    }
 }
 
 .footer-socials-list {
