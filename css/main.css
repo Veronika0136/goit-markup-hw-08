@@ -1018,21 +1018,32 @@ body {
 
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--additional-dark-txt-cl);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .clients-link {
-  width: 170px;
+  max-width: 210px;
   height: 92px;
   color: var(--additional-txt-cl);
   border: 1px solid var(--additional-txt-cl);
@@ -1042,6 +1053,21 @@ body {
 .clients-link:hover, .clients-link:focus {
   color: var(--accent-txt-cl);
   border-color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 480px) {
+  .clients-link {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
 }
 
 .clients-icon {
