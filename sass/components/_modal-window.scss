@@ -36,6 +36,15 @@
     transform: translate(-50%, -50%) scale(0.2) rotate(1turn);
 }
 }
+
+@media screen and (max-width:479px){
+    .modal{
+     width: 100%;
+     height: 100%; 
+     overflow: scroll;  
+    }
+    
+}
 .modal-btn {
     @extend %centered;
     position: absolute;
@@ -185,12 +194,6 @@
         }
 }
 /* Mobile */
-@media screen and (max-width:480px){
-    .modal{
-     overflow: scroll;
-    }
-}
-
 
 @media screen and (min-width:480px){
     .modal {
