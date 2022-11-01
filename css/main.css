@@ -263,8 +263,8 @@ body {
 
 .register-form-agreement-text {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 8px;
+  line-height: 1.75;
   letter-spacing: 0.03em;
   user-select: none;
   text-underline-position: under;
