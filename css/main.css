@@ -263,8 +263,8 @@ body {
 
 .register-form-agreement-text {
   font-weight: 400;
-  font-size: 8px;
-  line-height: 1.75;
+  font-size: 7px;
+  line-height: 2;
   letter-spacing: 0.03em;
   user-select: none;
   text-underline-position: under;
@@ -310,7 +310,7 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
   .register-form-title {
     font-weight: 700;
