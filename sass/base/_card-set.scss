@@ -1,11 +1,12 @@
 /**/
 
-// .card-set {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: var(--indent);
-// }
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--indent);
+}
 
-// .card-set-item {
-//     flex-basis: calc((100% - var(--indent) * (var(--itens) - 1)) / var(--itens));
-// }
+.card-set-item {
+    flex-basis: calc((100% - var(--indent) * (var(--itens) - 1)) / var(--itens));
+}
