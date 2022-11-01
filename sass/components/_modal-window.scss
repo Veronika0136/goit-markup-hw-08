@@ -161,7 +161,7 @@
 }
 }
 .register-form-agreement-text {
-    @include font (400, 8px, 14px, 0.03em);
+    @include font (400, 7px, 14px, 0.03em);
     user-select: none;
     text-underline-position: under;
 }
@@ -205,7 +205,7 @@
 @media screen and (min-width:1200px) {
     .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
 }
 
     .register-form-title {
