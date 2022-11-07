@@ -79,6 +79,11 @@ body {
   justify-content: center;
   gap: var(--indent);
 }
+@media screen and (min-width: 768px) {
+  .card-set {
+    justify-content: flex-start;
+  }
+}
 
 .card-set-item {
   flex-basis: calc((100% - var(--indent) * (var(--itens) - 1)) / var(--itens));
@@ -1195,7 +1200,11 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
-  width: 326px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-filtr {
+    width: 326px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-filtr {
@@ -1285,8 +1294,8 @@ body {
 
 .portfolio-overlay-txt {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5555555556;
+  font-size: 16px;
+  line-height: 1.75;
   letter-spacing: 0.03em;
   color: #ffffff;
   user-select: none;
@@ -1303,8 +1312,8 @@ body {
 
 .portfolio-subtitle {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  font-size: 16px;
+  line-height: 2.25;
   letter-spacing: 0.06em;
   color: var(--additional-dark-txt-cl);
   padding-left: 15px;
@@ -1318,6 +1327,11 @@ body {
   padding-left: 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio-img {
+    width: 300px;
+  }
+}
 @media screen and (min-width: 480px) {
   .portfolio-img {
     width: 450px;
