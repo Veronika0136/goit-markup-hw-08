@@ -1,9 +1,18 @@
 .portfolio-filtr {
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 50px;
+    width: 326px;
+
+
+    @media screen and (min-width:768px){
+    justify-content: center;
+    width: 100%;    
+    }
+
+
 }
 
 .portfolio-filtr-btn {
