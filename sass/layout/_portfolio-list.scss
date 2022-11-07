@@ -1,6 +1,12 @@
 .portfolio-list {
-    --itens: 3;
     padding: 0px;
+
+    @media screen and (min-width:480px){
+    --itens: 1;}
+    @media screen and (min-width:768px){
+    --itens: 2;}
+    @media screen and (min-width:1200px){
+    --itens: 3;}    
 }
 
 
@@ -63,4 +69,18 @@
 .portfolio-txt {
     @include font (400, 16px, 30px, 0.03em);
     padding-left: 15px;
+}
+
+.portfolio-img {
+    
+       @media screen and (min-width:480px){
+        width: 450px;   
+       }
+       @media screen and (min-width:768px){
+        width: 354px;    
+       }
+       @media screen and (min-width:1200px){
+        width: 370px;    
+       }
+
 }
