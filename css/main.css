@@ -809,8 +809,8 @@ body {
   }
   .social__link {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2222222222;
+    font-size: 16px;
+    line-height: 1.375;
     letter-spacing: 0.02em;
     color: var(--accent-txt-cl);
   }
@@ -1229,8 +1229,22 @@ body {
 }
 
 .portfolio-list {
-  --itens: 3;
   padding: 0px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-list {
+    --itens: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    --itens: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    --itens: 3;
+  }
 }
 
 .portfolio-link {
@@ -1295,4 +1309,20 @@ body {
   line-height: 1.875;
   letter-spacing: 0.03em;
   padding-left: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-img {
+    width: 370px;
+  }
 }/*# sourceMappingURL=main.css.map */
