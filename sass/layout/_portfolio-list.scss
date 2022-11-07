@@ -46,7 +46,7 @@
 }
 
 .portfolio-overlay-txt {
-    @include font (400, 18px, 28px, 0.03em);
+    @include font (400, 16px, 28px, 0.03em);
     color: #ffffff;
     user-select: none;
 }
@@ -61,7 +61,7 @@
 }
 
 .portfolio-subtitle {
-    @include font (700, 18px, 36px, 0.06em);
+    @include font (700, 16px, 36px, 0.06em);
     color: var(--additional-dark-txt-cl);
     padding-left: 15px;
 }
@@ -72,6 +72,9 @@
 }
 
 .portfolio-img {
+       @media screen and (max-width:480px){
+        width: 300px;
+       }
     
        @media screen and (min-width:480px){
         width: 450px;   
